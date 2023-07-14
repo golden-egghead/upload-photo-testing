@@ -22,10 +22,10 @@ public class Photo {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 
-	@Column(name = Photo)
+	@Column(name = "Photo")
 	String photo;
 
-	@Column(name = CreatedDate)
+	@Column(columnDefinition = "DATE", name = "CreatedDate")
 	LocalDateTime createdDate;
 }
 
